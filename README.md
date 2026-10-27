@@ -47,7 +47,20 @@ Configured DNS services on Server0 and created the following DNS A record:
 
 Configured both client PCs to use Server0 for DNS resolution.
 ![DNS Configuration](Lab-8-DNS-Configuration.png)
-**Resolution:** Corrected the client's DNS server address to `192.168.10.100`.
+
+
+## DNS Troubleshooting Scenarios
+
+### Scenario 1: Incorrect DNS Server Address
+
+**Issue:** PC1 was configured with an incorrect DNS server address (`192.168.10.200`).
+
+**Symptoms:** The client could successfully ping `192.168.10.100`, but `nslookup server.corp.local` failed.
+
+**Root Cause:** The client's DNS configuration pointed to the wrong server.
+
+**Resolution:** Updated PC1's DNS server address to `192.168.10.100` and verified successful hostname resolution.
+  
 
 ### Scenario 2: Missing DNS A Record
 **Issue:** The DNS record for `server.corp.local` was removed.
