@@ -13,18 +13,7 @@ The lab consists of:
 All devices connect through the switch, with the router serving as the default gateway.
 ![DNS Topology](Lab-8-Network-Topology.png)
 
-## Connectivity and DNS Verification
 
-Verified network connectivity and DNS hostname resolution using the following commands:
-
-```text
-ping 192.168.10.100
-nslookup server.corp.local
-```
-
-Both client PCs successfully resolved `server.corp.local` to `192.168.10.100`.
-
-![DNS Verification](Lab-8-DNS-Verification.png)
   
 ## IP Addressing
 
@@ -48,7 +37,18 @@ Configured DNS services on Server0 and created the following DNS A record:
 Configured both client PCs to use Server0 for DNS resolution.
 ![DNS Configuration](Lab-8-DNS-Configuration.png)
 
+## Connectivity and DNS Verification
 
+Verified network connectivity and DNS hostname resolution using the following commands:
+
+```text
+ping 192.168.10.100
+nslookup server.corp.local
+```
+
+Both client PCs successfully resolved `server.corp.local` to `192.168.10.100`.
+
+![DNS Verification](Lab-8-DNS-Verification.png)
 ## DNS Troubleshooting Scenarios
 
 ### Scenario 1: Incorrect DNS Server Address
