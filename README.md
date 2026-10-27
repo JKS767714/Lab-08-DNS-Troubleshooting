@@ -32,28 +32,7 @@ Configured DNS services on Server0 and created the following DNS A record:
 - **Record Type:** A
 
 Configured both client PCs to use Server0 for DNS resolution.
-
-## Connectivity and DNS Verification
-
-Used the following commands to verify network connectivity and DNS functionality:
-
-```text
-ping 192.168.10.100
-nslookup server.corp.local
-```
-
-**Results:**
-- Both PCs successfully communicated with the DNS server.
-- DNS queries successfully resolved `server.corp.local` to `192.168.10.100`.
-- Verified that network connectivity and DNS resolution functioned correctly.
-
-## DNS Troubleshooting Scenarios
-
-### Scenario 1: Incorrect DNS Server Address
-**Issue:** Client DNS settings pointed to an incorrect IP address.
-
-**Symptoms:** IP connectivity succeeded, but hostname resolution failed.
-
+![DNS Configuration](Lab-8-DNS-Configuration.png)
 **Resolution:** Corrected the client's DNS server address to `192.168.10.100`.
 
 ### Scenario 2: Missing DNS A Record
