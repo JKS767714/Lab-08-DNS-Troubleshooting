@@ -12,6 +12,20 @@ The lab consists of:
 
 All devices connect through the switch, with the router serving as the default gateway.
 ![DNS Topology](Lab-8-Network-Topology.png)
+
+## Connectivity and DNS Verification
+
+Verified network connectivity and DNS hostname resolution using the following commands:
+
+```text
+ping 192.168.10.100
+nslookup server.corp.local
+```
+
+Both client PCs successfully resolved `server.corp.local` to `192.168.10.100`.
+
+![DNS Verification](Lab-8-DNS-Verification.png)
+  
 ## IP Addressing
 
 | Device | IP Address | Default Gateway | DNS Server |
