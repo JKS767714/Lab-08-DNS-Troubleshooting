@@ -11,7 +11,7 @@ The lab consists of:
 - 1 DNS Server
 
 All devices connect through the switch, with the router serving as the default gateway.
-
+![DNS Topology](Lab-8-Network-Topology.png)
 ## IP Addressing
 
 | Device | IP Address | Default Gateway | DNS Server |
